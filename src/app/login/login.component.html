@@ -1,0 +1,25 @@
+<!--model driven form-->
+<form class="container" [formGroup]="forms" (ngSubmit)="onSubmit(forms.value)">
+  <input type="text" name="firstname" placeholder="first name" formControlName="firstname"><br>
+  <input type="text" name="lastname" placeholder="last name" formControlName="lastname"><br>
+  <select name="languages" id="" formControlName="languages">
+    <option value="java">java</option>
+    <option value="angular">angular</option>
+    <option value="python">python</option>
+  </select><br><br>
+  <input type="submit" value="submit">
+</form>
+<!--template driven form-->
+<!--<form class="container" #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">-->
+  <!--<input type="text" name="firstname" placeholder="first name" ngModel=""><br>-->
+  <!--<input type="text" name="lastname" placeholder="last name" ngModel=""><br>-->
+  <!--<select name="languages" id="" ngModel="">-->
+    <!--<option value="java">java</option>-->
+    <!--<option value="angular">angular</option>-->
+    <!--<option value="python">python</option>-->
+  <!--</select><br><br>-->
+  <!--<input type="submit" value="submit">-->
+<!--</form>-->
+
+
+

@@ -1,0 +1,13 @@
+<app-login></app-login>
+<app-converter></app-converter>
+<div class="main">
+  <h1>TODO Lists</h1>
+   <div class="addItem">
+        <input class="addText" type="text" [(ngModel)]="newItem" placeholder="add item">
+        <button (click)="pushItem()">add</button>
+  </div>
+  <ul>
+    <li *ngFor="let i of arr; let ind=index">{{i}}<span (click)="removeItem(ind)">x</span></li>
+  </ul>
+</div>
+
